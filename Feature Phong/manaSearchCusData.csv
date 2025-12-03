@@ -1,0 +1,8 @@
+expectRow,inputSearch,expectFirstName,expectLastName,checkName
+1,Hermoine,,,0
+2,Weasly,,,0
+0,Voldemort,,,0
+1,E725JB,,,0
+2,,,,0
+1,pot,Harry,Potter,1
+1,hermoine,Hermoine,Granger,1
