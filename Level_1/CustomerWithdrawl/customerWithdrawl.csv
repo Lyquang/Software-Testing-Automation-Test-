@@ -1,0 +1,5 @@
+caseID,initialBalance,withdrawAmount,expectedMessage,expectSuccess
+TC-002-001,3005,3000,Transaction Successful,True
+TC-002-002,3005,6000,Transaction Failed. You can not withdraw amount more than the balance,False
+TC-002-014,3005,3005,Transaction Successful,True
+TC-002-003,3005,0,Transaction Successful,False
