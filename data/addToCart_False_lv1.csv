@@ -1,0 +1,13 @@
+testcase,itemsInCartBefore,numberItems,textSuccess,itemsInCartAfter
+1,0,0,Fail: Minimum 1 item required.,0
+6,0,888,Invalid quantity. Please enter a valid number within the allowed limit.,0
+9,0,0,Fail: Minimum 1 item required.,0
+10,0,-3,Quantity cannot be negative. Please enter a valid positive number.,0
+11,0,.,Quantity cannot be negative. Please enter a valid positive number.,0
+12,0,2.5,Quantity must be an integer. Please enter a whole number,0
+13,0,900,Invalid quantity. Please enter a valid number within the allowed limit.,0
+14,0, ,Quantity is required. Please enter a value.,0
+18,0,-1,Quantity cannot be negative. Please enter a valid positive number.,0
+23_1,0,0,Fail: Minimum 1 item required.,0
+23_2,0,-1,Quantity cannot be negative. Please enter a valid positive number.,0
+23_3,0,.,Quantity cannot be negative. Please enter a valid positive number.,0

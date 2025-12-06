@@ -13,12 +13,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 def load_csv_data():
     rows = []
     try:
-        with open("customerWithdrawl.csv", encoding="utf-8") as f:
+        with open("../data/customerWithdrawl.csv", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 rows.append(row)
     except FileNotFoundError:
-        print("Lỗi: Không tìm thấy file withdrawl_data.csv")
+        print("Lỗi: Không tìm thấy file customerWithdrawl.csv")
     return rows
 
 class WithdrawTest(unittest.TestCase):

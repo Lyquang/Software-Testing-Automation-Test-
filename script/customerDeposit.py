@@ -14,12 +14,12 @@ def load_csv_data():
     rows = []
     # Đảm bảo file csv nằm cùng thư mục
     try:
-        with open("customerDeposit.csv", encoding="utf-8") as f:
+        with open("../data/customerDeposit.csv", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 rows.append(row)
     except FileNotFoundError:
-        print("Lỗi: Không tìm thấy file customerDepostit.csv")
+        print("Lỗi: Không tìm thấy file customerDeposit.csv")
     return rows
 
 class DepositTest(unittest.TestCase):

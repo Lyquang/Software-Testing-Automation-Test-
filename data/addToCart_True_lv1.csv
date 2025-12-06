@@ -1,0 +1,9 @@
+testcase,itemsInCartBefore,numberItems,textSuccess,itemsInCartAfter
+2,0,1,Success: You have added MacBook to your shopping cart !,1
+3,0,2,Success: You have added MacBook to your shopping cart !,2
+3,0,99,Success: You have added MacBook to your shopping cart !,99
+4,0,100,Success: You have added MacBook to your shopping cart !,100
+7,0,50,Success: You have added MacBook to your shopping cart !,50
+8,0,8,Success: You have added MacBook to your shopping cart !,8
+15,0,5,Success: You have added MacBook to your shopping cart !,5
+21,0,3,Success: You have added MacBook to your shopping cart !,3

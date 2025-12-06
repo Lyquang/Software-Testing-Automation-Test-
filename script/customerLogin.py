@@ -72,7 +72,7 @@ class CustomerLoginTest(unittest.TestCase):
             self.assertFalse(is_login_visible, "Lỗi: Nút Login vẫn hiện ra dù chưa chọn User hợp lệ!")
 
 def generate_test_cases():
-    data_rows = load_csv_data("customerLogin.csv") 
+    data_rows = load_csv_data("../data/customerLogin.csv") 
 
     for index, row in enumerate(data_rows):
         def test(self, row=row): 
