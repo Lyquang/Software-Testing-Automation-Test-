@@ -2,27 +2,50 @@
 
 Dự án này cho phép chạy **1 file Python bất kỳ** hoặc **chạy toàn bộ file trong thư mục** thông qua `main.py`.
 
+---
+
+## 📦 Cài đặt Dependencies
+
+Trước khi chạy dự án, cần cài đặt các thư viện Python yêu cầu.
+
+### 1. Cài đặt bằng `pip`
+```bash
+pip install -r requirements.txt
+
+
 ## 📁 Cấu trúc thư mục
 
 ```
-project/
- ├─ customerDeposit.py
- ├─ customerDeposit.py
- ├─ manaSearchCus.py
- ├─ ...
- └─ main.py   ← file điều khiển chạy các script
+Software-Testing-Automation-Test/
+├─data/
+|   ├─ customerDeposit.csv
+|   ├─ customerDeposit.csv
+|   ├─ manaSearchCus.csv
+|   └─   ...
+|
+└─ scripts/
+    ├─ customerDeposit.py
+    ├─ customerDeposit.py
+    ├─ manaSearchCus.py
+    ├─ ...
+    └─ main.py   ← file điều khiển chạy các script
 ```
 
 ## 🚀 Cách sử dụng
 
-### 1. Chạy **tất cả file**
+### 1. Di chuyển vào nơi lưu trữ các script**
 ```bash
-python main.py all
+    cd scripts
 ```
 
-### 2. Chạy **một file cụ thể**
+### 2. Chạy **tất cả file**
 ```bash
-python main.py manaSearchCus.py
+    python main.py all
+```
+
+### 3. Chạy **một file cụ thể**
+```bash
+    python main.py manaSearchCus.py
 ```
 
 > Lưu ý: Tên file phải trùng với file trong thư mục.
