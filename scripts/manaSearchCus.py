@@ -130,6 +130,7 @@ class BaseTest(unittest.TestCase):
 
 # === TỰ ĐỘNG TẠO TEST CASE TỪ CSV ===
 def generate_test_cases():
+    print("Chạy testcase manaSearchCus.py")
     data_rows = load_csv_data()
 
     for index, row in enumerate(data_rows):

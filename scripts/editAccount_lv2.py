@@ -136,6 +136,7 @@ class EditAccountTest(unittest.TestCase):
                 self.fail(f"Fail: Không tìm thấy thông báo lỗi mong đợi: '{expected_msg}'")
 
 def generate_test_cases():
+    print("Chạy testcase editAccount_lv2.py")
     csv_filename = os.getenv("CSV_FILE")
     
     if not csv_filename:

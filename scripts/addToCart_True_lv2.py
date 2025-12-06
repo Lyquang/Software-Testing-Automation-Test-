@@ -107,6 +107,7 @@ class BaseTest(unittest.TestCase):
 
 
 def generate_test_cases():
+    print("Chạy testcase addToCart_True_lv2.py")
     data_rows = load_csv_data()
 
     for index, row in enumerate(data_rows):

@@ -143,6 +143,7 @@ class DepositTest(unittest.TestCase):
             
 # === TỰ ĐỘNG GEN TEST CASE TỪ CSV ===
 def generate_test_cases():
+    print("Chạy testcase customerDeposit.py")
     data_rows = load_csv_data()
     
     if not data_rows:

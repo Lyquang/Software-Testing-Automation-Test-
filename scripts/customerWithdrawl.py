@@ -114,6 +114,7 @@ class WithdrawTest(unittest.TestCase):
 
 # === TỰ ĐỘNG GEN TEST CASE ===
 def generate_test_cases():
+    print("Chạy testcase customerWithdrawl.py")
     data_rows = load_csv_data()
     if not data_rows: return
 

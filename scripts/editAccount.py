@@ -115,6 +115,7 @@ class EditAccountTest(unittest.TestCase):
                 self.fail(f"Fail: Không tìm thấy thông báo lỗi mong đợi: '{expected_msg}'")
 
 def generate_test_cases():
+    print("Chạy testcase editAccount.py")
     data_rows = load_csv_data("../data/editAccount.csv") 
 
     for index, row in enumerate(data_rows):

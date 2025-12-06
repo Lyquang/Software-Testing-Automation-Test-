@@ -121,6 +121,7 @@ class CustomerDepositTest(unittest.TestCase):
             self.assertEqual(initial_balance, new_balance, "Lỗi: Số dư thay đổi dù input không hợp lệ!")
 
 def generate_test_cases():
+    print("Chạy testcase customerDeposit_lv2.py")
     csv_filename = os.getenv("CSV_FILE")
     
     if not csv_filename:
