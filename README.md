@@ -11,6 +11,7 @@ Trước khi chạy dự án, cần cài đặt các thư viện Python yêu c�
 ### 1. Cài đặt bằng `pip`
 ```bash
 pip install -r requirements.txt
+```
 
 
 ## 📁 Cấu trúc thư mục
