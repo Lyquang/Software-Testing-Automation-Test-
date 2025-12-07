@@ -24,7 +24,7 @@ from selenium.webdriver.chrome.service import Service
 
 def load_csv_data():
     rows = []
-    with open("../data/manaSearchCusData.csv", encoding="utf-8") as f:
+    with open("../data/manaSearchCusData_lv1.csv", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             rows.append(row)
