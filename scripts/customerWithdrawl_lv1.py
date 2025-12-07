@@ -13,7 +13,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 def load_csv_data():
     rows = []
     try:
-        with open("../data/customerWithdrawl.csv", encoding="utf-8") as f:
+        with open("../data/customerWithdrawl_lv1.csv", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 rows.append(row)
@@ -92,6 +92,16 @@ class WithdrawTest(unittest.TestCase):
         
         # Lấy số dư mới
         new_balance = int(driver.find_element(By.XPATH, "//strong[2]").text)
+        
+        actual_msg = ""
+        try:
+            # Chờ tối đa 3s. Nếu message hiện ra thì lấy text, nếu không thì bỏ qua (timeout)
+            WebDriverWait(driver, 3).until(
+                lambda d: d.find_element(By.XPATH, "//span[@ng-show='message']").text.strip() != ""
+            )
+            actual_msg = driver.find_element(By.XPATH, "//span[@ng-show='message']").text
+        except:
+            actual_msg = "" # Coi như không có thông báo (dành cho case rút 0đ)
 
         print(f"--- Test Case: Rút {withdraw_amount} từ {initial_balance} ---")
         print(f"Thông báo thực tế: {actual_msg}")

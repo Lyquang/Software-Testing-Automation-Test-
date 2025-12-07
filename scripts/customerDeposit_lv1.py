@@ -14,7 +14,7 @@ def load_csv_data():
     rows = []
     # Đảm bảo file csv nằm cùng thư mục
     try:
-        with open("../data/customerDeposit.csv", encoding="utf-8") as f:
+        with open("../data/customerDeposit_lv1.csv", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 rows.append(row)
@@ -35,7 +35,7 @@ class DepositTest(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
-    # Hàm hỗ trợ: Login vào tư cách khách hàng
+    # # Hàm hỗ trợ: Login vào tư cách khách hàng
     def login_as_customer(self, customer_name="Harry Potter"):
         driver = self.driver
         driver.get(self.base_url)
@@ -53,53 +53,8 @@ class DepositTest(unittest.TestCase):
         # Xác nhận đã vào trang account (Check tên hiện lên)
         WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, f"//span[contains(text(),'{customer_name}')]")))
 
+
     # Hàm thực thi test case chính
-    # def run_deposit_test(self, amount, expected_msg, should_increase):
-    #     driver = self.driver
-        
-    #     # 1. Login trước
-    #     self.login_as_customer("Harry Potter")
-        
-    #     # 2. Chuyển sang tab Deposit
-    #     deposit_tab = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'Deposit')]")))
-    #     deposit_tab.click()
-        
-    #     # 3. Lấy số dư ban đầu (để so sánh nếu cần)
-    #     time.sleep(1) # Chờ load số dư
-    #     balance_element = driver.find_element(By.XPATH, "//strong[2]")
-    #     initial_balance = int(balance_element.text)
-
-    #     # 4. Nhập tiền và bấm nút
-    #     amount_input = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//input[@ng-model='amount']")))
-    #     amount_input.clear()
-    #     amount_input.send_keys(amount)
-        
-    #     submit_btn = driver.find_element(By.XPATH, "//button[@type='submit']")
-    #     submit_btn.click()
-
-    #     # 5. Kiểm tra kết quả (Verification)
-        
-    #     # TRƯỜNG HỢP 1: Nhập số hợp lệ (Expect Success)
-    #     if should_increase == "True":
-    #         # Kiểm tra thông báo thành công
-    #         try:
-    #             msg_element = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//span[@ng-show='message']")))
-    #             self.assertEqual(msg_element.text, expected_msg, f"Sai thông báo! Mong đợi: {expected_msg}, Thực tế: {msg_element.text}")
-    #         except:
-    #             self.fail("Không thấy thông báo Deposit Successful xuất hiện.")
-            
-    #         # Kiểm tra số dư có tăng không (Optional)
-    #         # new_balance = int(driver.find_element(By.XPATH, "//strong[2]").text)
-    #         # self.assertTrue(new_balance > initial_balance, "Lỗi: Số dư không tăng sau khi nạp tiền!")
-
-    #     # TRƯỜNG HỢP 2: Nhập số 0 hoặc lỗi (Expect No Change/No Message)
-    #     else:
-    #         # Logic xử lý cho trường hợp nhập 0 (dựa theo ảnh excel TC-001-002 của bạn: Số dư giữ nguyên)
-    #         time.sleep(2)
-    #         new_balance = int(driver.find_element(By.XPATH, "//strong[2]").text)
-    #         self.assertEqual(initial_balance, new_balance, "Lỗi: Nhập số 0 nhưng số dư vẫn thay đổi!")
-
-# Hàm thực thi test case chính
     def run_deposit_test(self, amount, expected_msg, should_increase):
         driver = self.driver
         
