@@ -10,6 +10,7 @@ import unittest, time, re
 import csv
 from pathlib import Path
 from selenium.common.exceptions import NoSuchElementException, TimeoutException, StaleElementReferenceException
+from selenium.webdriver.chrome.service import Service
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -31,7 +32,8 @@ class BaseTest(unittest.TestCase):
         self.driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
 
     def setUp(self):
-        self.driver = webdriver.Chrome(ChromeDriverManager().install())
+        service = Service(ChromeDriverManager().install())
+        self.driver = webdriver.Chrome(service=service)
         self.driver.implicitly_wait(30)
         self.base_url = "https://www.google.com/"
         self.driver.maximize_window()
