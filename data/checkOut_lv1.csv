@@ -1,0 +1,19 @@
+caseID,First Name,Last Name,E-Mail,Telephone,Address 1,City,Post Code,Country,Region / State,Privacy Policy,Expected Message,Should Success
+TC-007-001,Harry,Potter,harry.valid@example.com,0912233445,4 Privet Drive,London,NW1 6XE,United Kingdom,Greater London,True,Your order has been placed!,True
+TC-007-002,,Potter,harry.nofirst@example.com,0912233445,4 Privet Drive,London,NW1 6XE,United Kingdom,Greater London,True,First Name must be between 1 and 32 characters!,False
+TC-007-003,Harry,,harry.nolast@example.com,0912233445,4 Privet Drive,London,NW1 6XE,United Kingdom,Greater London,True,Last Name must be between 1 and 32 characters!,False
+TC-007-004,Harry,Potter,harry.noaddress@example.com,0912233445,,London,NW1 6XE,United Kingdom,Greater London,True,Address 1 must be between 3 and 128 characters!,False
+TC-007-005,Harry,Potter,harry.nocity@example.com,0912233445,4 Privet Drive,,NW1 6XE,United Kingdom,Greater London,True,City must be between 2 and 128 characters!,False
+TC-007-006,Harry,Potter,harry.nopost@example.com,0912233445,4 Privet Drive,London,,United Kingdom,Greater London,True,Postcode must be between 2 and 10 characters!,False
+TC-007-007,Harry,Potter,harry.nophone@example.com,,4 Privet Drive,London,NW1 6XE,United Kingdom,Greater London,True,Telephone must be between 3 and 32 characters!,False
+TC-007-008,HarryNameIsLongerThanThirtyTwoCharsX,Potter,harry.longfname@example.com,0912233445,4 Privet Drive,London,NW1 6XE,United Kingdom,Greater London,True,First Name must be between 1 and 32 characters!,False
+TC-007-009,Harry,PotterNameIsLongerThanThirtyTwoCharsX,harry.longlname@example.com,0912233445,4 Privet Drive,London,NW1 6XE,United Kingdom,Greater London,True,Last Name must be between 1 and 32 characters!,False
+TC-007-010,Harry,Potter,harryinvalidemail,0912233445,4 Privet Drive,London,NW1 6XE,United Kingdom,Greater London,True,E-Mail address does not appear to be valid!,False
+TC-007-011,Harry,Potter,harry.shortphone@example.com,12,4 Privet Drive,London,NW1 6XE,United Kingdom,Greater London,True,Telephone must be between 3 and 32 characters!,False
+TC-007-012,Harry,Potter,harry.shortaddr@example.com,0912233445,Hi,London,NW1 6XE,United Kingdom,Greater London,True,Address 1 must be between 3 and 128 characters!,False
+TC-007-013,Harry,Potter,harry.longaddr@example.com,0912233445,AddressIsVeryLongAndExceedsOneHundredTwentyEightCharactersLimitWhichIsRequiredByTheSystemToValidateTheInputCorrectlyForTestingPurposes,London,NW1 6XE,United Kingdom,Greater London,True,Address 1 must be between 3 and 128 characters!,False
+TC-007-014,Harry,Potter,harry.shortcity@example.com,0912233445,4 Privet Drive,L,NW1 6XE,United Kingdom,Greater London,True,City must be between 2 and 128 characters!,False
+TC-007-015,Harry,Potter,harry.longcity@example.com,0912233445,4 Privet Drive,CityNameIsVeryLongAndExceedsOneHundredTwentyEightCharactersLimitWhichIsRequiredByTheSystemToValidateTheInputCorrectlyForTestingPurposes,NW1 6XE,United Kingdom,Greater London,True,City must be between 2 and 128 characters!,False
+TC-007-016,Harry,Potter,harry.shortpost@example.com,0912233445,4 Privet Drive,London,1,United Kingdom,Greater London,True,Postcode must be between 2 and 10 characters!,False
+TC-007-017,Harry,Potter,harry.longpost@example.com,0912233445,4 Privet Drive,London,12345678901,United Kingdom,Greater London,True,Postcode must be between 2 and 10 characters!,False
+TC-007-018,Harry,Potter,harry.nopolicy@example.com,0912233445,4 Privet Drive,London,NW1 6XE,United Kingdom,Greater London,False,Warning: You must agree to the Terms & Conditions!,False
