@@ -2,6 +2,6 @@ caseID,amount,expectedMessage,shouldBalanceIncrease
 TC-001-001,5000,Deposit Successful,True
 TC-001-002,0,,False
 TC-001-003,1,Deposit Successful,True
-TC-001-006,3000,Deposit Successful,True
-TC-001-007,9007199254740995,Deposit Successful,True
-TC-001-010,9007199254740993,Deposit Successful,True
+TC-001-004,3000,Deposit Successful,True
+TC-001-005,9007199254740995,Deposit Successful,True
+TC-001-006,9007199254740993,Deposit Successful,True

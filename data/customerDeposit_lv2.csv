@@ -1,7 +1,7 @@
-caseID,amount,expectedMessage,shouldBalanceIncrease
-TC-001-001,5000,Deposit Successful,True
-TC-001-002,0,,False
-TC-001-003,1,Deposit Successful,True
-TC-001-006,3000,Deposit Successful,True
-TC-001-007,9007199254740995,Deposit Successful,True
-TC-001-010,9007199254740993,Deposit Successful,True
+caseID,amount,expectedMessage,shouldBalanceIncrease,url,username,btnCustomerLoginXPATH,selectUserID,btnLoginXPATH,tabDepositXPATH,lblBalanceXPATH,inputAmountXPATH,btnSubmitXPATH,msgErrorXPATH
+TC-001-001,5000,Deposit Successful,True,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,Harry Potter,"//button[contains(text(),'Customer Login')]",userSelect,//button[text()='Login'],"//button[contains(text(),'Deposit')]",//strong[2],//input[@ng-model='amount'],//button[@type='submit'],//span[@ng-show='message']
+TC-001-002,0,,False,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,Harry Potter,"//button[contains(text(),'Customer Login')]",userSelect,//button[text()='Login'],"//button[contains(text(),'Deposit')]",//strong[2],//input[@ng-model='amount'],//button[@type='submit'],//span[@ng-show='message']
+TC-001-003,1,Deposit Successful,True,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,Harry Potter,"//button[contains(text(),'Customer Login')]",userSelect,//button[text()='Login'],"//button[contains(text(),'Deposit')]",//strong[2],//input[@ng-model='amount'],//button[@type='submit'],//span[@ng-show='message']
+TC-001-006,3000,Deposit Successful,True,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,Harry Potter,"//button[contains(text(),'Customer Login')]",userSelect,//button[text()='Login'],"//button[contains(text(),'Deposit')]",//strong[2],//input[@ng-model='amount'],//button[@type='submit'],//span[@ng-show='message']
+TC-001-007,9007199254740995,Deposit Successful,True,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,Harry Potter,"//button[contains(text(),'Customer Login')]",userSelect,//button[text()='Login'],"//button[contains(text(),'Deposit')]",//strong[2],//input[@ng-model='amount'],//button[@type='submit'],//span[@ng-show='message']
+TC-001-010,9007199254740993,Deposit Successful,True,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,Harry Potter,"//button[contains(text(),'Customer Login')]",userSelect,//button[text()='Login'],"//button[contains(text(),'Deposit')]",//strong[2],//input[@ng-model='amount'],//button[@type='submit'],//span[@ng-show='message']
