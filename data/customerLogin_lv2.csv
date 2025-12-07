@@ -1,8 +1,8 @@
-userName,expectedWelcomeText
-Hermoine Granger,Hermoine Granger
-Harry Potter,Harry Potter
-Ron Weasly,Ron Weasly
-Albus Dumbledore,Albus Dumbledore
-Neville Longbottom,Neville Longbottom
-Nguyen Van A,No Login Button
-Mr Nobody,No Login Button
+userName,expectedWelcomeText,BASE_URL,LOCATOR_BTN_CUSTOMER_LOGIN_XPATH,LOCATOR_SELECT_USER_ID,LOCATOR_BTN_LOGIN_XPATH,LOCATOR_MSG_WELCOME_CLASS
+Hermoine Granger,Hermoine Granger,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,"//button[contains(text(),'Customer Login')]",userSelect,"//button[text()='Login']",fontBig
+Harry Potter,Harry Potter,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,"//button[contains(text(),'Customer Login')]",userSelect,"//button[text()='Login']",fontBig
+Ron Weasly,Ron Weasly,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,"//button[contains(text(),'Customer Login')]",userSelect,"//button[text()='Login']",fontBig
+Albus Dumbledore,Albus Dumbledore,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,"//button[contains(text(),'Customer Login')]",userSelect,"//button[text()='Login']",fontBig
+Neville Longbottom,Neville Longbottom,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,"//button[contains(text(),'Customer Login')]",userSelect,"//button[text()='Login']",fontBig
+Nguyen Van A,No Login Button,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,"//button[contains(text(),'Customer Login')]",userSelect,"//button[text()='Login']",fontBig
+Mr Nobody,No Login Button,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,"//button[contains(text(),'Customer Login')]",userSelect,"//button[text()='Login']",fontBig

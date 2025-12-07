@@ -1,16 +1,16 @@
-firstName,telephone,expectedType,expectedMessage
-Nam,12345678912345678,success,Success: Your account has been successfully updated.
-Nam,12,error,Telephone must be between 3 and 32 characters!
-Nam,123,success,Success: Your account has been successfully updated.
-Nam,1234,success,Success: Your account has been successfully updated.
-Nam,1231231231231231231231231231231,success,Success: Your account has been successfully updated.
-Nam,12312312312312312312312312312312,success,Success: Your account has been successfully updated.
-Nam,123123123123123123123123123123123,error,Telephone must be between 3 and 32 characters!
-Nam,,error,Telephone must be between 3 and 32 characters!
-Nam,0123456789,success,Success: Your account has been successfully updated.
-Nam,01234567890123456789012345678912345,error,Telephone must be between 3 and 32 characters!
-Nam,abc,success,Success: Your account has been successfully updated.
-Nam,123456789,success,Success: Your account has been successfully updated.
-Nam,12,error,Telephone must be between 3 and 32 characters!
-,123456789,error,First Name must be between 1 and 32 characters!
-,12,error,First Name must be between 1 and 32 characters!
+firstName,telephone,expectedType,expectedMessage,BASE_URL,TEST_EMAIL,TEST_PASSWORD,LOCATOR_INPUT_EMAIL_ID,LOCATOR_INPUT_PASSWORD_ID,LOCATOR_BTN_LOGIN_XPATH,LOCATOR_LINK_EDIT_TEXT,LOCATOR_INPUT_FIRSTNAME_ID,LOCATOR_INPUT_TELEPHONE_ID,LOCATOR_BTN_CONTINUE_XPATH,LOCATOR_MSG_SUCCESS_CLASS
+Nam,12345678912345678,success,Success: Your account has been successfully updated.,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,12,error,Telephone must be between 3 and 32 characters!,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,123,success,Success: Your account has been successfully updated.,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,1234,success,Success: Your account has been successfully updated.,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,1231231231231231231231231231231,success,Success: Your account has been successfully updated.,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,12312312312312312312312312312312,success,Success: Your account has been successfully updated.,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,123123123123123123123123123123123,error,Telephone must be between 3 and 32 characters!,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,,error,Telephone must be between 3 and 32 characters!,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,0123456789,success,Success: Your account has been successfully updated.,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,01234567890123456789012345678912345,error,Telephone must be between 3 and 32 characters!,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,abc,success,Success: Your account has been successfully updated.,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,123456789,success,Success: Your account has been successfully updated.,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+Nam,12,error,Telephone must be between 3 and 32 characters!,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+,123456789,error,First Name must be between 1 and 32 characters!,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
+,12,error,First Name must be between 1 and 32 characters!,https://ecommerce-playground.lambdatest.io/index.php?route=account/login,a@mymail.com,1234,input-email,input-password,//input[@value='Login'],Edit your account,input-firstname,input-telephone,//input[@value='Continue'],alert-success
